@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>10</initValue>
+      <name>wait_timeout</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>current_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/login'</initValue>
+      <name>login_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/merchant/mer_id/rule-order'</initValue>
+      <name>rule_order_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>false</initValue>
+      <name>is_login</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['Thiết lập ID', 'Thiết lập phí giao hàng', 'Phương phức thanh toán', 'Đối tác vận chuyển', 'Commission Rule', 'Tùy chọn', 'Tùy chọn nhóm', 'Tạo danh mục', 'Tạo sản phẩm trong danh mục']</initValue>
+      <name>step_keywords</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[]</initValue>
+      <name>data</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

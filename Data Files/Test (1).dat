@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Test (1)</name>
+   <tag></tag>
+   <containsHeaders>false</containsHeaders>
+   <csvSeperator>SEMICOLON</csvSeperator>
+   <dataFileGUID>27ff32cb-37bc-4203-be92-b22259d14aea</dataFileGUID>
+   <dataSourceUrl>Data Files/test.csv</dataSourceUrl>
+   <driver>CSV</driver>
+   <isInternalPath>true</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
