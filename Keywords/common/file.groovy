@@ -98,6 +98,9 @@ public class DataFile {
 					if (step_index <= 4){
 						result.add(row[1])
 					}
+					else {
+						result.add(row)
+					}
 				}
 
 				if (row[0].contains(keyword)) {
@@ -105,7 +108,10 @@ public class DataFile {
 				}
 			}
 		}
-		println(result)
+
+		if (step_index > 4){
+			result.remove(0)
+		}
 		return result;
 	}
 }

@@ -15,4 +15,35 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import common.DataFile as DataFile
 
+// Validation
+WebUI.callTestCase(findTestCase('Validator/Validate'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Define
+String merchant_payment_url = GlobalVariable.domain + GlobalVariable.merchant_payment_url
+merchant_payment_url = merchant_payment_url.replaceAll("mer_id", GlobalVariable.current_mer_id)
+DataFile file = new DataFile()
+def data = file.getStepData(2, GlobalVariable.data)
+
+// Start
+WebUI.navigateToUrl(merchant_payment_url)
+WebUI.verifyElementPresent(findTestObject('Merchant Payment page/identify_element'), GlobalVariable.wait_timeout)
+WebUI.click(findTestObject('Merchant Payment page/btn_setup'))
+
+// Phương thức thanh toán
+WebUI.setText(findTestObject('Merchant Payment page/input_payment_method'), data[0])
+WebUI.sendKeys(findTestObject('Merchant Payment page/input_payment_method'), Keys.chord(Keys.ENTER))
+
+// Thứ tự ưu tiên
+WebUI.setText(findTestObject('Merchant Payment page/input_weight'), data[1])
+
+try {
+	// Tạo
+	WebUI.click(findTestObject('Merchant Payment page/btn_create'))
+	
+} catch(Exception e) {
+	println(e)
+	// Cập nhật
+}

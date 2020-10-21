@@ -21,12 +21,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['214']</initValue>
+      <initValue>[]</initValue>
       <name>merchant_ids</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['4']</initValue>
+      <initValue>[]</initValue>
       <name>place_ids</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

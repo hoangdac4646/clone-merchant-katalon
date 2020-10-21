@@ -6,9 +6,9 @@
    <containsHeaders>false</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>1011ab0c-96ed-4e26-a0e6-492853adb04a</dataFileGUID>
-   <dataSourceUrl>/home/hoangdac/meete/Katalon Test/Ops tool/clone-merchant/Data Files/test 2.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/test 2.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <properties>
       <entry>
          <key>readAsString</key>

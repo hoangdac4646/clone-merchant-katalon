@@ -18,10 +18,14 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import org.openqa.selenium.Keys as Keys
 
 import internal.GlobalVariable
 
-public class helper {
+public class Helper {
+	Helper(){
+	}
+
 	@Keyword
 	void addGlobalVariable(String name, def value) {
 		GroovyShell shell1 = new GroovyShell()
@@ -29,5 +33,13 @@ public class helper {
 		String getterName = "get" + name.capitalize()
 		mc.'static'."$getterName" = { -> return value }
 		mc.'static'."$name" = value
+	}
+
+	@Keyword
+	void clearInputElement(String element_name) {
+		int input_length = WebUI.getText(findTestObject(element_name)).length()
+		for (int i = 0; i < input_length; i++) {
+			WebUI.sendKeys(findTestObject(element_name), Keys.chord(Keys.BACK_SPACE))
+		}
 	}
 }

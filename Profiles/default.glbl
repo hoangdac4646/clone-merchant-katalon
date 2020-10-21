@@ -22,7 +22,42 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'/merchant/mer_id/rule-order'</initValue>
-      <name>rule_order_url</name>
+      <name>merchant_rule_order_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/merchant/mer_id/payment'</initValue>
+      <name>merchant_payment_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/merchant/mer_id/carrier'</initValue>
+      <name>merchant_carrier_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/place/place_id/commission'</initValue>
+      <name>place_commission_rule_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/place/place_id/zalo/contacts'</initValue>
+      <name>place_zalo_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/place/place_id/options'</initValue>
+      <name>place_option_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/place/place_id/option-group'</initValue>
+      <name>place_option_group_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/place/place_id/products'</initValue>
+      <name>place_product_url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -31,7 +66,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['Thiết lập ID', 'Thiết lập phí giao hàng', 'Phương phức thanh toán', 'Đối tác vận chuyển', 'Commission Rule', 'Tùy chọn', 'Tùy chọn nhóm', 'Tạo danh mục', 'Tạo sản phẩm trong danh mục']</initValue>
+      <initValue>['0. Thiết lập ID', '1. Thiết lập phí giao hàng', '2. Phương phức thanh toán', '3. Đối tác vận chuyển', '4. Commission Rule', '5. Tùy chọn', '6. Tùy chọn nhóm', '7.1 Tạo danh mục', '7.2 Tạo sản phẩm trong danh mục']</initValue>
       <name>step_keywords</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
