@@ -85,6 +85,10 @@ public class DataFile {
 		if (step_index < GlobalVariable.step_keywords.size() - 1){
 			nextKeyword = GlobalVariable.step_keywords[step_index + 1]
 		}
+		else{
+			nextKeyword = "qwertyuiop"
+		}
+
 		boolean lockTarget = false;
 
 		for(int i = 0; i < data.size(); i++) {
@@ -102,7 +106,6 @@ public class DataFile {
 						result.add(row)
 					}
 				}
-
 				if (row[0].contains(keyword)) {
 					lockTarget = true;
 				}

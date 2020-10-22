@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//p[text()='${title}']/following::div[@class='icon-create-product']</value>
+         <value>//*[contains(text(),'Upload hình ảnh')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

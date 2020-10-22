@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_price</name>
+   <name>btn_upload_tab</name>
    <tag></tag>
-   <elementGuidId>59a0742a-34b6-4c8e-97e8-780f3e8e7853</elementGuidId>
+   <elementGuidId>8426b64f-bbb4-4284-88c3-7f91875ac9f5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[contains(text(),'Giá Sale')]/following::input</value>
+         <value>//div[text()='Tải lên']</value>
       </entry>
       <entry>
          <key>BASIC</key>
